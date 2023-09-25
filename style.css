@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('./bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.weather{
+    color: white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+.weather>div{
+    margin: 0.625rem;
+}
+
+.weather1{
+    font-size: 4rem;
+}
+
+.weather p{
+     font-size: 2rem;
+}
+.weather span{
+    font-size: 0.75rem;
+}
+.weather3 img{
+    width: 2rem;
+}
+.weather3 span{
+    padding: 1rem;
+}
+
+nav{
+    position: absolute;
+     bottom: 0%;
+     height: 100px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content:center ;
+     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.46);
+     border-radius: 100px 100px 0 0;
+     padding: 1rem 0;
+}
+
+nav form{
+    width: 70%;
+     display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.searchfield{
+    font-size: 1.1rem;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 1rem 0;
+    border-bottom: 2px solid white;
+    width: 95%;
+}
+
+
+nav form button{
+    border-radius: 0 25px 25px 0;
+    font-size: 1.1rem ;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: rgb(224, 208, 105);
+}
+
